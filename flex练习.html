@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vertically Centered Flex Items</title>
+<title>Flex Centered Items</title>
 <style>
   .container {
-    display: flex; /* 创建Flex容器 */
-    align-items: center; /* 垂直居中Flex项目 */
-    height: 200px; /* 容器的高度，可以根据需要调整 */
+    display: flex; /* 创建一个Flex容器 */
+    justify-content: center; /* 水平居中Flex项目 */
+    height: 200px; /* 容器高度，可以根据需要调整 */
     background-color: #f3f3f3; /* 容器背景颜色，仅用于演示 */
     padding: 10px; /* 容器内边距，根据需要调整 */
   }
 
   .item {
     width: 100px; /* Flex项目的宽度 */
-    height: 50px; /* Flex项目的高度 */
+    height: 100px; /* Flex项目的高度 */
     background-color: #ff6347; /* Flex项目背景颜色 */
     margin: 5px; /* Flex项目之间的间距 */
-    display: flex; /* 使每个.item也成为Flex容器 */
-    justify-content: center; /* 在.item内部水平居中文本 */
-    align-items: center; /* 在.item内部垂直居中文本 */
+    text-align: center; /* 文本居中 */
+    line-height: 100px; /* 垂直居中文本 */
     color: white; /* 文本颜色 */
     font-weight: bold; /* 文本加粗 */
   }
@@ -29,7 +32,9 @@
 <body>
 
 <div class="container">
-  <div class="item">Flex Item</div>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
 </div>
 
 </body>
