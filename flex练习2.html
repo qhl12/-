@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horizontal Centering with Flexbox</title>
+<title>Vertical Centering with Flexbox</title>
 <style>
-    .flex-container {
+    .flex-container-vertical {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
         background-color: #f0f0f0;
     }
-    .flex-item {
+    .flex-item-vertical {
         width: 100px;
         height: 100px;
         background-color: #333;
@@ -25,10 +26,10 @@
 </style>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="flex-item">1</div>
-        <div class="flex-item">2</div>
-        <div class="flex-item">3</div>
+    <div class="flex-container-vertical">
+        <div class="flex-item-vertical">1</div>
+        <div class="flex-item-vertical">2</div>
+        <div class="flex-item-vertical">3</div>
     </div>
 </body>
 </html>
